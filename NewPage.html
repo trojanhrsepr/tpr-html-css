@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>My Test Page</title>
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<script src="script.js" type="text/javascript"></script>
+	<head>
+	<body>
+		<header role="banner">
+			<h1 id="top" style"colour:red; font-weight:normal;">What's HTML About?</h1>
+			<nav>
+				<ol start="6" reversed type="I">List of links (ordered)
+					<li><a href="index.htm" title="random link usage">New Link</a></li>
+					<li><a href="../folder1/index1.htm">New Link 1</a></li>
+						<ul>
+							<li><a href="#NewlinkId" title="sectionNav">Section Nav</a></li>
+							<li><a href="http://www.w3.org/TR/html5/browsers.html#toc-nav" title="sectionNav">Section Nav of doc.htm</a></li>
+						</ul>
+					<li><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail</a></li>
+				</ol>
+				<dl>Definition List
+					<dt>List term</dt>
+					<dd>Description of List</dd>
+				</dl>
+			</nav>
+		</header>
+		<div class="random" id="NewId" role="complementary">
+			<p>This is a test &nbsp;&nbsp;page to <b>see</b> how <em>HTML</em> <strong>works</strong></p>
+			<pre>       How is this   for a    line with spaces? This is   preformatted text   </pre>
+		</div>
+		<h3 id="NewlinkId">External link</h3> 
+		<a href="https://en.wikipedia.org/wiki/Chris_Martin" title="Coldplay wiki" target="_blank">Link to Coldplay wiki with blank for new tab</a>
+		<p>This is a random external link &nbsp;Wiki</p>
+		<main role="main">
+			<article role="article">These are WAI-ARIA roles to make page more accessible</article>
+			<section></section>
+			<aside>related but not a part of article or section. Attaching an external file <a href="../assets.zip" title="New zip file" download="Newfile zip">New file</a>
+				 <a href="../assets.zip" title="New zip file1">Second version</a>
+			</aside>
+		</main>
+		<footer>
+			<p>Last of the page. My copyrights.</p>
+			<a href="file:///Users/i331597/Desktop/NewPage.html#top" title="back to top">Back to top</a>
+			<a href="#top" title="back to top">Back to top</a>
+		</footer role="contentinfo">
+	</body>
+</html>
